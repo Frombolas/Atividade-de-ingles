@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>  
+    <style>
+        canvas{
+            border: 10px;
+            background-color: rgb(0, 0, 0);
+        }
+        embed {
+            float:right;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="quadro" width="300px" height="200px">
+        Seu navegador não é compativel com o Canvas!!
+    </canvas>
+    <script>
+    const quadro = document.querySelector('#quadro');
+    const contexto = quadro.getContext('2d');
+
+    contexto.fillStyle = '#FF0000';
+    contexto.fillRect(0, 0, 100, 100);
+    </script>
+
+    <embed src="imgs/capivara.mp4" type="video/webm" width="800px" height="600px">
+</body>
+</html>
